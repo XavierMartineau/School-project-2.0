@@ -1,0 +1,73 @@
+* {
+  padding: 0%;
+  margin: 0%;
+}
+header h1 {
+  text-align: center;
+  position: absolute;
+  top: 40%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: white;
+  margin: 0;
+  font-size: 60px;
+}
+header video {
+  width: 100%;
+  margin-bottom: 0%;
+  max-height: 74vh;
+  object-fit: fill;
+}
+.container1 {
+  width: 100%;
+  height: 100vh;
+  background-color: black;
+}
+
+.container2 {
+  padding: 10%;
+  position: relative;
+  text-align: center;
+  width: 100%;
+  height: 500px;
+  background-color: black;
+}
+#startAnimation {
+  font-size: 1.125rem;
+  background: white;
+  position: absolute;
+  top: 60%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 2;
+  border: 0;
+  border-radius: 100%;
+  font-weight: bold;
+  cursor: pointer;
+  line-height: 4rem;
+  width: 4rem;
+  height: 4rem;
+  text-align: center;
+  transition: transform 0.5s;
+  box-shadow: 0 0.2rem 1rem black;
+}
+#startAnimation:hover {
+  background: green;
+  color: white;
+  transform: translate(-50%, -50%) scale(1.125);
+}
+#startAnimation:active {
+  background: darkgreen;
+}
+
+#icon {
+  transform: rotate(100%);
+  width: 100px;
+  height: 100px;
+  display: inline-block;
+}
+
+#Bouton {
+  width: 100%;
+  border-radius: 0%;
+}

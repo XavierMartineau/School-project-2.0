@@ -1,0 +1,290 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+body {
+  background-color: #232323;
+  font-family: "fantasy";
+  font-weight: 400;
+  font-style: normal;
+  margin: 0; /* Retire les marges du body */
+  display: flex;
+  justify-content: center; /* Centre horizontalement */
+  align-items: flex-start; /* Aligne les éléments en haut de la page */
+  min-height: 100vh; /* Hauteur minimale de la page */
+}
+
+.container1 {
+  background-color: #6c6e6b;
+  position: relative;
+  width: 500px;
+  height: 4000px; /* La hauteur peut être trop grande, tu peux la réduire selon tes besoins */
+}
+
+.texte {
+  align-items: center;
+  text-align: center;
+  font-size: 120px;
+  color: blue;
+  font-weight: bold;
+  transition: color 0.5s;
+}
+
+.container2 {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 500px;
+  height: 900px; /* Tu peux ajuster cette hauteur pour tester l'animation */
+}
+
+#svg1 {
+  position: absolute;
+  top: 0; /* Positionne la flèche en haut de son conteneur */
+  left: 50%;
+  transform: translateX(-50%); /* Centre la flèche horizontalement */
+  width: 150px;
+  height: 150px;
+  z-index: 10;
+}
+
+.intro {
+  color: var(--bs-info-text-emphasis);
+  font-size: 50px;
+  justify-content: center;
+  justify-items: center;
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+  margin: 20px;
+}
+
+.container3 {
+  position: relative;
+  display: flex;
+  top: 0px;
+  justify-content: center;
+  align-items: center;
+  width: 500px;
+  height: 200px; /* Tu peux ajuster cette hauteur pour tester l'animation */
+}
+
+.container4 {
+  position: relative;
+  background-image: url(./Assets/Ice.jpg);
+  display: flex;
+  top: 0;
+  justify-content: center;
+  align-items: center;
+  width: 500px;
+  height: 600px; /* Tu peux ajuster cette hauteur pour tester l'animation */
+}
+
+.question1,
+.question2,
+.question3,
+.question4 {
+  color: var(--bs-primary-text-emphasis);
+  text-align: center;
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+  font-size: 25px;
+  position: relative;
+  display: flex;
+  top: 0px;
+  justify-content: center;
+  align-items: center;
+  width: 500px;
+  height: 100px;
+}
+
+.answer1 {
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+  font-size: 25px;
+  position: relative;
+  top: 0px;
+  justify-content: center;
+  align-items: center;
+  width: 500px;
+  height: 155px;
+  margin-left: 40%;
+}
+
+.container5 {
+  position: relative;
+  display: flex;
+  top: 0px;
+  justify-content: center;
+  align-items: center;
+  width: 500px;
+  height: 100px;
+}
+
+#favicon {
+  display: flex;
+  position: absolute;
+  top: 50%; /* Centre verticalement */
+  transform: translateY(-50%);
+  position: absolute;
+  width: 100px;
+  height: 100px;
+  align-items: center;
+  transform-origin: center center; /* Rotation depuis le centre */
+}
+#feedback1,
+#feedback2,
+#feedback3,
+#feedback4 {
+  text-align: center; /* Centre horizontalement le texte */
+  margin-top: 10px; /* Ajoute un espace au-dessus du feedback */
+  font-size: 20px; /* Taille de la police du feedback */
+  padding: 10px; /* Ajoute de l'espace autour du texte */
+}
+
+.answer2 {
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+  font-size: 25px;
+  position: relative;
+  top: 0px;
+  justify-content: center;
+  align-items: center;
+  width: 500px;
+  height: 220px;
+  margin-left: 0.5%;
+}
+
+.answer3 {
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+  font-size: 25px;
+  position: relative;
+  top: 0px;
+  justify-content: center;
+  align-items: center;
+  width: 500px;
+  height: 155px;
+  margin-left: 40%;
+}
+.answer4 {
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+  font-size: 25px;
+  position: relative;
+  top: 0px;
+  justify-content: center;
+  align-items: center;
+  width: 500px;
+  height: 155px;
+  margin-left: 40%;
+}
+/* Les styles spécifiques au bouton */
+/* Le bouton est désactivé au départ */
+/* Le bouton est désactivé au départ */
+#submitBtn:disabled {
+  background-color: #dc3545; /* Rouge foncé */
+  border-color: #dc3545; /* Bordure rouge */
+  cursor: not-allowed; /* Curseur en mode non autorisé */
+}
+
+/* Lorsque le bouton est activé, il devient vert au survol */
+#submitBtn:enabled:hover {
+  background-color: #28a745; /* Vert clair sur survol */
+  border-color: #28a745;
+  color: white;
+}
+
+#submitBtn:enabled {
+  background-color: #28a745; /* Vert clair quand activé */
+  border-color: #28a745;
+  cursor: pointer; /* Curseur en mode pointage */
+}
+.container6 {
+  position: relative;
+  display: flex;
+  top: 0px;
+  color: var(--bs-warning);
+  justify-content: center;
+  align-items: center;
+  width: 500px;
+  height: 150px;
+  font-size: 40px;
+}
+.container8 {
+  position: relative;
+  align-items: center;
+  display: flex; /* Utilise Flexbox pour organiser les éléments enfants */
+  justify-content: center; /* Centre les SVGs horizontalement */
+  height: 400px; /* Hauteur du conteneur */
+  width: 500px; /* Largeur du conteneur */
+  position: relative; /* Le conteneur est le parent de positionnement relatif */
+  z-index: 10;
+}
+.container7 {
+  position: relative;
+  align-items: center;
+  display: flex; /* Utilise Flexbox pour organiser les éléments enfants */
+  justify-content: center; /* Centre les SVGs horizontalement */
+  height: 400px; /* Hauteur du conteneur */
+  width: 500px; /* Largeur du conteneur */
+  position: relative; /* Le conteneur est le parent de positionnement relatif */
+  z-index: 10;
+}
+
+#fail_svg {
+  width: 350px;
+  position: absolute;
+  left: 50%;
+  top: -185%; /* Positionne la flèche en haut de son conteneur */
+  transform: translateX(-50%); /* Centre la flèche horizontalement */
+  z-index: 2; /* Le SVG fail sera devant */
+  opacity: 0;
+}
+
+#win_svg {
+  width: 350px;
+  left: 50%;
+  position: absolute;
+  top: -185%; /* Positionne la flèche en haut de son conteneur */
+  transform: translateX(-50%); /* Centre la flèche horizontalement */
+  z-index: 1; /* Le SVG win sera derrière */
+  opacity: 0;
+}
+
+.morphing {
+  top: -200%;
+  fill: goldenrod;
+  display: none;
+  position: relative;
+  display: block;
+  margin: 20px auto;
+  width: 500px;
+  max-height: 500px;
+}
+
+#animal {
+  visibility: hidden;
+}
+
+#startAnimation {
+  font-size: 1.125rem;
+  background: white;
+  position: absolute;
+  top: 38%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 2;
+  border: 0;
+  border-radius: 100%;
+  font-weight: bold;
+  cursor: pointer;
+  line-height: 4rem;
+  width: 4rem;
+  height: 4rem;
+  text-align: center;
+  transition: transform 0.5s;
+  box-shadow: 0 0.2rem 1rem black;
+}
+#startAnimation:hover {
+  background: green;
+  color: white;
+  transform: translate(-50%, -50%) scale(1.125);
+}
+#startAnimation:active {
+  background: darkgreen;
+}
